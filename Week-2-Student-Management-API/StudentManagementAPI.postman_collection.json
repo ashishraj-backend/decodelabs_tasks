@@ -1,0 +1,177 @@
+{
+  "info": {
+    "name": "Student Management REST API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": "Postman collection for Student Management REST API"
+  },
+  "item": [
+    {
+      "name": "Get Students",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students"]
+        }
+      }
+    },
+    {
+      "name": "Get Student by ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students", "1"]
+        }
+      }
+    },
+    {
+      "name": "Create Student",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Ava\",\n  \"lastName\": \"Patel\",\n  \"email\": \"ava.patel@example.com\",\n  \"phone\": \"9876543210\",\n  \"course\": \"Computer Science\",\n  \"semester\": 5,\n  \"cgpa\": 9.1\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students"]
+        }
+      }
+    },
+    {
+      "name": "Update Student",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"firstName\": \"Aman\",\n  \"lastName\": \"Sharma\",\n  \"email\": \"aman.sharma@example.com\",\n  \"phone\": \"9876543210\",\n  \"course\": \"Computer Science\",\n  \"semester\": 4,\n  \"cgpa\": 8.8\n}"
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Student",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students", "1"]
+        }
+      }
+    },
+    {
+      "name": "Search by Course",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students?course=Computer%20Science",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students"],
+          "query": [
+            {
+              "key": "course",
+              "value": "Computer Science"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Search by Email",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students?email=aman.sharma@example.com",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students"],
+          "query": [
+            {
+              "key": "email",
+              "value": "aman.sharma@example.com"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Search by Semester",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students?semester=4",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students"],
+          "query": [
+            {
+              "key": "semester",
+              "value": "4"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Sort Students by CGPA",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/v1/students?sortByCgpa=true",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "8080",
+          "path": ["api", "v1", "students"],
+          "query": [
+            {
+              "key": "sortByCgpa",
+              "value": "true"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

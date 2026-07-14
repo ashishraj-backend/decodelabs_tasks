@@ -1,0 +1,28 @@
+# Maven
+/target/
+**/target/
+/*.log
+
+# IDE
+/.idea
+*.iml
+*.ipr
+*.iws
+/.vscode
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Spring Boot
+**/spring-boot-devtools.properties
+
+# Others
+*.class
+*.jar
+*.war
+*.ear
+
+# H2 database files
+*.db
+*.h2.db
