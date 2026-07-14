@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DecodeLabs logo">
+  <rect width="64" height="64" rx="16" fill="#070B16"/>
+  <path d="M20 44L32 18L44 44" stroke="url(#g)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26 36H38" stroke="#32D4FF" stroke-width="5" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="g" x1="20" y1="18" x2="44" y2="44" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5B7CFF"/>
+      <stop offset="1" stop-color="#8F5BFF"/>
+    </linearGradient>
+  </defs>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="DecodeLabs AI preview">
+  <rect width="1200" height="630" rx="36" fill="#060B16"/>
+  <rect x="80" y="80" width="1040" height="470" rx="30" fill="url(#bg)"/>
+  <circle cx="950" cy="220" r="110" fill="#32D4FF" opacity="0.25"/>
+  <path d="M276 390L430 230L588 390" stroke="white" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M336 338H524" stroke="#32D4FF" stroke-width="18" stroke-linecap="round"/>
+  <text x="180" y="220" fill="white" font-family="Inter, Arial, sans-serif" font-size="56" font-weight="700">DecodeLabs AI</text>
+  <text x="180" y="290" fill="#D9E5FF" font-family="Inter, Arial, sans-serif" font-size="28">Premium digital experiences for ambitious teams</text>
+  <defs>
+    <linearGradient id="bg" x1="80" y1="80" x2="1120" y2="550" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#101C3B"/>
+      <stop offset="1" stop-color="#0B1225"/>
+    </linearGradient>
+  </defs>
+</svg>
